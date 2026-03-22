@@ -1,4 +1,4 @@
-/** Универсальный стек (LIFO) для операторов при переводе в ОПЗ и для операндов при подсчёте. */
+
 export class Stack<T> {
   private readonly items: T[] = [];
 
@@ -22,3 +22,4 @@ export class Stack<T> {
     return this.items.length === 0;
   }
 }
+ 
