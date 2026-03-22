@@ -1,6 +1,6 @@
 import readline from "node:readline/promises";
 import { stdin as input, stdout as output } from "node:process";
-import { evaluateExpression } from "./calculator/calculator.js";
+import { evaluateExpression } from "./calculator/expression.js";
 
 async function runInteractive(): Promise<void> {
   const rl = readline.createInterface({ input, output });

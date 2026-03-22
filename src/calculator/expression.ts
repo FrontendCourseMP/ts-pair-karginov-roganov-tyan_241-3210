@@ -103,7 +103,6 @@ function opPrecedence(op: "+" | "*"): number {
   return op === "*" ? 2 : 1;
 }
 
-
 function toRpn(tokens: Token[]): Token[] {
   const out: Token[] = [];
   const ops = new Stack<"+" | "*">();

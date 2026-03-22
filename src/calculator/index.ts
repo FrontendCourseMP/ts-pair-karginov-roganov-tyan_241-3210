@@ -1,4 +1,4 @@
-import { evaluateExpression } from "./calculator.js";
+import { evaluateExpression } from "./expression.js";
 
 const exprInput = document.querySelector<HTMLInputElement>("#expr");
 const calculateBtn = document.querySelector<HTMLButtonElement>("#calculate");
@@ -29,7 +29,7 @@ function runCalculation(): void {
 
 btn.addEventListener("click", runCalculation);
 
-input.addEventListener("keydown", (ev) => {
+input.addEventListener("keydown", (ev: KeyboardEvent) => {
   if (ev.key === "Enter") {
     ev.preventDefault();
     runCalculation();

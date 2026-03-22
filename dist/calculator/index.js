@@ -1,4 +1,4 @@
-import { evaluateExpression } from "./calculator.js";
+import { evaluateExpression } from "./expression.js";
 const exprInput = document.querySelector("#expr");
 const calculateBtn = document.querySelector("#calculate");
 const resultEl = document.querySelector("#result");

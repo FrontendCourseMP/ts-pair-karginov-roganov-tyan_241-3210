@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { evaluateExpression } from "../dist/calculator/calculator.js";
+import { evaluateExpression } from "../calculator/expression.js";
 
 test("приоритет * над +: 12+3*4 → 24", () => {
   assert.equal(evaluateExpression("12+3*4"), 24);
