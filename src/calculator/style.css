@@ -1,0 +1,33 @@
+.app {
+  max-width: 28rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+#expr {
+  width: 100%;
+}
+
+#calculate {
+  width: 100%;
+}
+
+.result {
+  margin-top: 1rem;
+  min-height: 1.5em;
+}
+
+.result:empty {
+  display: none;
+}
+
+.result--error {
+  font-weight: bold;
+}

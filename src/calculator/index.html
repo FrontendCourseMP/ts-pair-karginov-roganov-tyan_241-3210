@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru-RU">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +7,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <h1>Калькулятор</h1>
-    <p>Поддерживаются только числа, операторы + и *</p>
-    <input type="" id="" placeholder="">
-    <button id="calculate">Вычислить</button>
-    <div id="result" class="result"></div>
+    <main class="app">
+        <h1>Калькулятор</h1>
+        <p class="hint">Только числа и операторы <code>+</code> и <code>*</code> (умножение считается раньше сложения).</p>
+        <label class="field">
+            <span class="field__label">Выражение</span>
+            <input type="text" id="expr" placeholder="например 12 + 3 * 4" autocomplete="off">
+        </label>
+        <button type="button" id="calculate">Вычислить</button>
+        <div id="result" class="result" aria-live="polite"></div>
+    </main>
 
     <script type="module" src="../../dist/calculator/index.js"></script>
 </body>
