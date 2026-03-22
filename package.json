@@ -6,6 +6,7 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc --watch",
+    "calc": "npm run build && node dist/console-work.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,7 +16,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/FrontendCourseMP/ts-pair-karginov-roganov-tyan_241-3210/issues"
   },
