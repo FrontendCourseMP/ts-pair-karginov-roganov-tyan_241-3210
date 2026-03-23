@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc --watch",
-    "calc": "npm run build && node dist/console-work.js",
+    "calc": "npm run build && node dist/demo-for-work.js",
     "test": "npm run build && node --test dist/tests/calculator.test.js"
   },
   "repository": {
