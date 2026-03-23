@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Роганов 241-3210 Калькулятор</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 420px;
+        margin: 40px auto;
+        padding: 0 16px;
+      }
+      h1 {
+        font-size: 1.2rem;
+      }
+      fieldset {
+        border: 1px solid #ccc;
+        margin: 0 0 12px;
+        padding: 12px;
+      }
+      legend {
+        padding: 0 6px;
+      }
+      label {
+        display: block;
+        margin-bottom: 4px;
+      }
+      input[type="text"] {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 8px;
+      }
+      button {
+        margin-top: 8px;
+        padding: 8px 16px;
+      }
+      output {
+        display: block;
+        margin-top: 8px;
+        min-height: 1.25em;
+        padding: 8px;
+        border: 1px solid #ddd;
+        background: #fafafa;
+      }
+      output.err {
+        color: #c00;
+        background: #fff5f5;
+        border-color: #fcc;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Роганов 241-3210 Калькулятор</h1>
+    <p>Только числа, «+» и «*» (например: 1+2*3)</p>
+
+    <form id="f" novalidate>
+      <fieldset>
+        <legend>Ввод данных</legend>
+        <label for="expr">Выражение</label>
+        <input
+          type="text"
+          id="expr"
+          name="expr"
+          autocomplete="off"
+          placeholder="1+2*3"
+        />
+        <button type="submit">Посчитать</button>
+      </fieldset>
+
+      <fieldset>
+        <legend>Вывод</legend>
+        <label for="output">Результат и сообщения</label>
+        <output id="output" for="expr" aria-live="polite"></output>
+      </fieldset>
+    </form>
+
+    <script type="module" src="../../dist/calculator/main.js"></script>
+  </body>
+</html>
